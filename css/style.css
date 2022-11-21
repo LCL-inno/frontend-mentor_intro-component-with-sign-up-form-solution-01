@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    min-width: var(--max-width-mobile);
+    max-width: var(--max-width-desktop);
+
+    background-image: url('../images/bg-intro-mobile.png');
+    background-color: var(--primary-color-01);
+    color: var(--general-color-01);
+
+    font-weight: var(--font-weight-01);
+    font-size: var(--font-size-01);
+
+    text-align: var(--align-center-01);
+
+}
+
+.body *{
+    font-family: var(--font-family-01);
+
+}
+
+.section {
+    padding: 2em;
+}
+    .section div {
+        border-radius: var(--border-radius-02);
+    }
+
+    .content-p {
+        font-size: 1.2em;
+    }
+
+    .div {
+        margin-bottom: 2em;
+        box-shadow: 0 .5em rgba(0,0,0,.2);
+    }
+
+
+.div-price-month {
+    padding: 1em;
+    background-color: var(--acent-color-01);
+}
+    .title {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    .title,
+    .reg-data-input input {
+        font-weight: var(--font-weight-04);
+    }
+
+
+    .trying-days {
+        font-weight: var(--font-weight-03);
+    }
+
+
+
+.section-register {
+    margin: 2em;
+    padding: 2em;
+}
+
+    
+    .reg-data-user label {
+        display: none;
+    } 
+
+    .reg-data-user input {
+        padding: .5em .5em;
+        margin: 0 0 .5em 0;
+
+        width: 100%;
+        min-height: 5vh;
+        
+        border: solid var(--neutral-color-02) 1px;
+        border-radius: var(--border-radius-01);
+
+        color: var(--neutral-color-01);
+
+        font-size: 1em;
+        font-weight: var(--font-weight-03);
+    }
+
+
+    .reg-data-user input:placeholder-shown {
+        font-family: var(--font-family-01);
+        color: var(--neutral-color-01);
+    }
+    
+    .reg-data-user input:focus-visible {
+        outline: solid var(--neutral-color-01) 1px;
+    }
+    
+    .reg-data-user input:invalid {
+        background-image: url('../images/icon-error.svg');
+        background-repeat: no-repeat;
+        background-position: right 5% bottom 50%;
+    }
+
+
+     .error-input *{
+        margin-bottom: 1em;
+        text-align: right;
+        font-style: italic;
+        font-size: .8em;
+
+        color: var(--primary-color-01);
+    } 
+
+  
+    .reg-data-user input:valid ~ .error-input{
+        display: none;
+    }
+
+    
+    .reg-data-user input:invalid ~ .error-input{
+        display: block;
+    }
+
+    .reg-data-user input:invalid::placeholder{
+        color: var(--primary-color-01);
+        opacity:1;
+    }
+
+        .reg-data-user input[type=submit] {
+            margin: 0 0 .4em 0;
+            border: solid var(--primary-color-02) 1px;
+            background-color: var(--primary-color-03);
+            text-transform: uppercase;
+            color: var(--general-color-01);
+            
+            cursor: pointer;
+
+            letter-spacing: .1em;
+            text-emphasis: 1em;
+            
+            box-shadow: 0 .25em var(--primary-color-02);
+        }
+
+
+        .reg-data-user input[type=submit]:hover {
+            background-color: var(--primary-color-04);
+            box-shadow: 0 .25em var(--primary-color-03);
+        }
+
+
+
+.div-form-register {
+    margin: .5em 0;
+    padding: 2em 1em;
+    width: 100%;
+    background-color: var(--general-color-01);
+}
+
+
+.div-form-register > *{
+    width: 100%;
+}
+
+
+.div-terms-services > *{
+    display: inline;
+}
+
+
+.submit,
+.mini-p.terms-services-jmp {
+    font-weight: var(--font-weight-02);
+}
+
+.mini-p {
+    line-height: 1em;
+    font-size: .85rem;
+    color: var(--neutral-color-02);
+}
+
+.terms-services-jmp {
+    color: var(--primary-color-01);
+}
+
+
+@media screen and (min-width:800px){
+    .container {
+        padding: 1em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-basis: 100%;
+    }
+
+    .section {
+        flex-basis: 50%;
+    }
+
+    .section-intro-method {
+        padding-left: 10em;
+    } 
+
+        .section-intro-method *{
+            text-align: var(--align-left-01);
+        }
+
+
+}

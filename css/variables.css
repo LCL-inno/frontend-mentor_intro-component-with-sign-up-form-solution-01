@@ -1,0 +1,58 @@
+:root {
+
+    /* Layout variables */
+    --max-width-mobile: 375px;
+    --max-width-desktop: 1440px;
+
+    /** Color variables **/
+    /* Primary colors */
+    --primary-color-01: hsl(0, 100%, 74%); 
+    /* Red */
+    --primary-color-02: hsl(154, 59%, 51%);
+    /* Green */
+    --primary-color-03:  rgba(56, 204, 140,.85);
+    /* 85% Transparent Green */
+    --primary-color-04:  rgba(56, 204, 140,.65);
+    /* 75% Transparent Green */
+
+
+    /* Acent colors */
+    --acent-color-01: hsl(248, 32%, 49%);
+    /* Blue */
+
+    /* Neutral colors */
+    --neutral-color-01: hsl(249, 10%, 26%);
+    /* Dark Blue */
+    --neutral-color-02: hsl(246, 25%, 77%);
+    /* Grayish Blue */
+
+    /* General colors */
+    --general-color-01: white;
+    /* White */
+
+
+    /** Box Radius **/
+    --border-radius-01: .35em;
+    --border-radius-02: .55em;
+
+
+    /** Tipography variables **/
+    /* Body Copy */
+    --font-size-01: 16px;
+
+    /* Font variables */
+    /* - Font family variables */
+    /*      POPPINS: see more (https://fonts.google.com/specimen/Poppins) */
+    --font-family-01: 'Poppins', sans-serif;
+
+    /* - Font weight variables */
+    --font-weight-01: 400;
+    --font-weight-02: 500;
+    --font-weight-03: 600;
+    --font-weight-04: 700;
+
+    /** Text variables **/
+    --align-center-01: center;
+    --align-left-01: left;
+
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="body">
+
+  <main class="container">
+
+    <section class="section section-intro-method">
+      <h1 class="title section-title">
+        Learn to code by watching others
+      </h1>
+      <p class="content-p intro-explain">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+
+    <aside class="section section-register">
+    
+        <div class="div div-price-month">
+          <p class="content-p price-month">
+            <strong class="trying-days">Try it free 7 days</strong> then $20/mo. thereafter
+          </p>
+        </div>
+    
+        <div class="div div-form-register">
+          <form action="#" class="reg-form">
+    
+            <ul class="reg-data-list">
+
+              <li class="reg-data-user">
+                <label for="reg-name-st"> First Name </label>
+                <input type="text" class="reg-name-st" name="reg-name-st" id="reg-name-st" placeholder="First Name"  aria-describedby="error-name-st1" pattern="[a-zA-Z]+[a-zA-Z|' ']*" title="First Name cannot be empty" required>
+                <div class="error-input">
+                  <p class="error-name-st"> First Name cannot be empty</p>
+                </div>
+              </li>
+
+              <li class="reg-data-user">
+                <label for="reg-name-lt"> Last Name</label>
+                <input type="text" class="reg-name-lt" name="reg-name-lt" id="reg-name-lt" placeholder="Last Name" pattern="[a-zA-Z]+[a-zA-Z|' ']*" title="Last Name cannot be empty" required> 
+                <div class="error-input">
+                  <p class="error-name-lt"> Last Name cannot be empty</p>
+                </div>
+              </li>
+
+              <li class="reg-data-user">
+                <label for="reg-email"> Email Address</label>
+                <input type="email" class="reg-email" name="reg-email" id="reg-email" placeholder="Email Address" title="Looks like this is not an email" required>
+                
+                <div class="error-input">
+                  <p class="error-email"> Looks like this is not an email</p>
+                </div>
+              </li>
+              
+              <li class="reg-data-user">
+                <label for="reg-pass"> Password</label>
+                <input type="password" class="reg-pass" name="reg-pass" id="reg-pass" placeholder="Password" pattern="[a-zA-Z]+[0-9|a-zA-Z|_|-]*" title="Password cannot be empty" required>
+                <div class="error-input">
+                  <p class="error-password"> Password cannot be empty</p>
+                </div>
+              </li>
+              <li class="reg-data-user reg-submit">
+                <input type="submit" class="submit div" value="Claim your free trial">
+              </li>
+            </ul>
+            
+
+            <div class="div-terms-services">
+              <p class="content-p mini-p terms-services-part">By clicking the button, you are agreeing to our </p>
+              <a class="content-p mini-p terms-services-jmp" href="#"> Terms and Services </a>
+            </div>
+          </form>
+        </div>
+      </aside>
+  </main>
+  
+</body>
+</html>
